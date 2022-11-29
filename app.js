@@ -1,5 +1,106 @@
-// Rooms
+class Room {
+  constructor(id, nombre, precio, imagen) {
+    this.id = id;
+    this.nombre = nombre;
+    this.precio = precio;
+    this.imagen = imagen;
+  }
+}
 
+const room1 = new Room(
+  1,
+  "Estandar",
+  5000,
+  "https://www.ramadaplazaveracruz.com/img/FOTOhabstandar.jpg"
+);
+const room2 = new Room(
+  2,
+  "Deluxe",
+  7000,
+  "https://www.granhotelmonterrey.com/uploads/9/8/2/4/98249186/luxe_11_orig.jpg"
+);
+const room3 = new Room(
+  3,
+  "Familiar",
+  12000,
+  "https://www.seadustcancun.com/uploads/cms_apps/imagenes/seadust-inner-suites_UpUomnf_YImA7Z5.jpg"
+);
+const room4 = new Room(
+  4,
+  "Suite",
+  17000,
+  "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/22/80/49/ff/paradisus-cancun.jpg?w=1200&h=-1&s=1"
+);
+const room5 = new Room(
+  5,
+  "Premium",
+  25000,
+  "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/a8/14/09/panama-jack-resorts-cancun.jpg?w=700&h=-1&s=1"
+);
+const room6 = new Room(
+  6,
+  "Gold",
+  25000,
+  "https://cdn.sandals.com/sandals/v11/site-elements/resorts/src/ows/ows-inside.jpg"
+);
+
+const rooms = [room1, room2, room3, room4, room5, room6];
+
+const divRooms = document.getElementById("divRooms");
+
+rooms.forEach((room) => {
+  divRooms.innerHTML += `
+  <div id="${room.id}" class="card">
+          <h4 class="card-title">${room.nombre}</h4>
+           <img src="${room.imagen}" alt="">
+          <p class="card-text">$${room.precio}</p>
+         <a href='#' class='btn-primary' id=${room.id}>COMPRAR</a>
+      </div>
+  `;
+});
+const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+
+const btnAgregar = document.querySelectorAll(".btn-primary");
+
+btnAgregar.forEach((btn) => {
+  btn.onclick = (e) => {
+    e.preventDefault();
+    const roomSeleccionado = rooms.find((rom) => rom.id === parseInt(btn.id));
+    const roomCarrito = { ...roomSeleccionado, cantidad: 1 };
+
+    const indexCarrito = carrito.findIndex((rom) => rom.id === roomCarrito.id);
+
+    if (indexCarrito === -1) {
+      carrito.push(roomCarrito);
+    } else {
+      carrito[indexCarrito].cantidad++;
+    }
+
+    localStorage.setItem("carrito", JSON.stringify(carrito));
+  };
+});
+
+/* const botonFinalizar = document.querySelector("#finalizar");
+
+botonFinalizar.onclick = () => {
+  const totalCompra = carrito
+    .map((rom) => rom.precio * rom.cantidad)
+    .reduce((elem1, elem2) => elem1 + elem2);
+  console.log(totalCompra);
+}; */
+
+
+
+
+
+
+
+
+
+
+
+
+/* // Rooms
 class Room {
     constructor(habitacion, precio, libre, balcon) {
       this.habitacion = habitacion;
@@ -83,9 +184,9 @@ class Room {
   }
   
   alert(`Lista de reservas: ${carrito}.
-  Tu compra total es de: $${total}`);
-  
-  /* // Declaro las funciones necesarias
+  Tu compra total es de: $${total}`); */
+
+/* // Declaro las funciones necesarias
   
   alert("Bienvenido al hotel Reef Airs, a continuacion te te pedimos que ingreses la cantidad de dias que te vas a hospedar.");
   
@@ -128,8 +229,8 @@ class Room {
   
   
    */
-  
-  /* const telefono = {
+
+/* const telefono = {
       marca: `Samsung`,
       color:`Azul`,
       sistemaOperativo:`Android`,
@@ -161,8 +262,8 @@ class Room {
    console.log(telefono4);
   
    */
-  
-  /* let operacion;
+
+/* let operacion;
   do {
       let numero1 = parseFloat(prompt("ingrese un numero"));
       let numero2 = parseFloat(prompt("ingrese otro numero"));
@@ -189,8 +290,8 @@ class Room {
                   break;
       }
   }while(operacion !== `.`); */
-  
-  /* let contador = 5;
+
+/* let contador = 5;
   let limite = parseInt(prompt("ingrese hasta que numero quiere calcular"));
   
   while(contador <= limite) {
@@ -199,8 +300,8 @@ class Room {
   
       contador++;
   } */
-  
-  /* let boletosPrimeraClase = 0;
+
+/* let boletosPrimeraClase = 0;
   let boletosStandard = 0;
   
   for(let i = 1; i <= 10; i++) {
@@ -215,8 +316,8 @@ class Room {
   }
   
   alert(`${boletosPrimeraClase} eligieron primera clase y ${boletosStandard} eligieron standard`); */
-  
-  /* let acumuladorDeCalificaiones = 0;
+
+/* let acumuladorDeCalificaiones = 0;
   
   for(let i = 0; i < 5; i++) {
       let calificacion = parseFloat(prompt("Ingrese su calificacion"));
@@ -226,8 +327,8 @@ class Room {
   
   let promedioCalificaciones = acumuladorDeCalificaiones / 5;
   alert(`El promedio de calificaiones es: ${promedioCalificaciones}`); */
-  
-  /* let kilosManzanas = parseInt(prompt("cuantos kilos de manzana compraras? "));
+
+/* let kilosManzanas = parseInt(prompt("cuantos kilos de manzana compraras? "));
   let kilosNaranjas = parseInt(prompt("cuantos kilos de naranjas compraras? "));
   
   if(kilosManzanas > 10 && kilosNaranjas > 10) {
@@ -239,8 +340,8 @@ class Room {
   } else {            
       alert("No tienes descuentos");
   } */
-  
-  /* let numero = parseInt(prompt("Ingresa un numero"));
+
+/* let numero = parseInt(prompt("Ingresa un numero"));
   
   
   if (numero%3 == 0 && numero%5 ==0) {
@@ -252,8 +353,8 @@ class Room {
   } else {
       alert("Par");
   } */
-  
-  /* let numero = parseInt(prompt("ingresa un numero"));
+
+/* let numero = parseInt(prompt("ingresa un numero"));
   let esPar = numero%2 == 0;
   console.log(numero%2)
   
@@ -262,8 +363,8 @@ class Room {
   } else { 
       alert(`no es par!`);
   } */
-  
-  /* let edadUsuario = parseInt (prompt("cual es tu edad?"));
+
+/* let edadUsuario = parseInt (prompt("cual es tu edad?"));
   
   
   if (edadUsuario >= 18) {
@@ -273,8 +374,8 @@ class Room {
   else {
       alert(`No podes comprar alcohol JAJAJAJAJAJ`);
   } */
-  
-  /* let nombre = prompt("Ingresa tu nombre");
+
+/* let nombre = prompt("Ingresa tu nombre");
   let anioNacimiento = prompt("En que año nacio?");
   
   let edad = 2022 - parseInt(anioNacimiento);
