@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/fav.png" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="sweetalert2.min.css" />
+
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>Lunhel Store</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <a href="./index.html"
+          ><img src="./images/logo.png" alt="imagenLogo" />
+          <h1 class="logo">Lunhel Store</h1>
+        </a>
+        <nav class="nav">
+          <ul class="nav__list"></ul>
+          <div id="total"></div>
+          <a href="#" class="btn-primary" id="btn-finalizar"
+            >Finalizar Compra</a
+          >
+        </nav>
+        <div class="bars__menu">
+          <i class="bx bxs-cart"></i><span id="countCarrito"></span>
+        </div>
+      </div>
+    </header>
+
+    <main class="home__hero">
+      <div class="container">
+        <h2>Productos</h2>
+        <div class="categorias">
+          <a href="#" id="VGA">VGA</a>
+          <a href="#" id="FUENTES">FUENTES</a>
+          <a href="#" id="MONITORES">MONITORES</a>
+          <a href="#" id="PROCESADOR">PROCESADORES</a>
+          <a href="#" id="MOTHER">MOTHERS</a>
+        </div>
+        <div class="productos__container"></div>
+      </div>
+    </main>
+    <form action="">
+      <input type="text" id="nombre" />
+      <input type="submit" value="ver nombre" onclick="alertaNombre()" />
+    </form>
+    <script src="./javascript/menu.js"></script>
+    <script type="text/javascript" src="./javascript/app.js" async></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </body>
+</html>

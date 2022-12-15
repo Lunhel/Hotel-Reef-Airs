@@ -1,0 +1,142 @@
+[
+    {
+      "nombre": "VGA EVGA RTX3060 XC Dual Fan",
+      "precio": 89000,
+      "imagen": "https://sp-ao.shortpixel.ai/client/q_glossy,ret_img,w_500/https://www.rhaegon.com.ar//wp-content/uploads/2022/01/EVGA-RTX3060-XC-Dual-Fan.png",
+      "marca": "VGA",
+      "id": 1
+    },
+    {
+      "nombre": "Fuente Aerocool Cyclon RGB 600w 80+Bronze",
+      "precio": 15000,
+      "imagen": "https://sp-ao.shortpixel.ai/client/q_glossy,ret_img,w_500/https://www.rhaegon.com.ar//wp-content/uploads/2021/11/Aerocool-Cyclon-RGB-500w-80Bronze.png",
+      "marca": "Fuente",
+      "id": 2
+    },
+    {
+      "nombre": "VGA EVGA RTX3070 XC3 LHR",
+      "precio": 101000,
+      "imagen": "https://sp-ao.shortpixel.ai/client/q_glossy,ret_img,w_500/https://www.rhaegon.com.ar//wp-content/uploads/2022/01/EVGA-RTX3070-XC3-LHR.png",
+      "marca": "VGA",
+      "id": 3
+    },
+    {
+      "nombre": "Fuente Corsair CV450 80+Bronze",
+      "precio": 13500,
+      "imagen": "https://sp-ao.shortpixel.ai/client/q_glossy,ret_img,w_500/https://www.rhaegon.com.ar//wp-content/uploads/2021/11/Corsair-CV450-80Bronze.png",
+      "marca": "Fuente",
+      "id": 4
+    },
+    {
+      "nombre": "VGA EVGA RTX3070Ti FTW3 Ultra Gaming",
+      "precio": 121000,
+      "imagen": "https://sp-ao.shortpixel.ai/client/q_glossy,ret_img,w_500/https://www.rhaegon.com.ar//wp-content/uploads/2022/01/EVGA-RTX3070Ti-FTW3-ULTRA-GAMING.png",
+      "marca": "VGA",
+      "id": 5
+    },
+    {
+      "nombre": "Fuente Corsair CV650 80+Bronze",
+      "precio":18700,
+      "imagen": "https://sp-ao.shortpixel.ai/client/q_glossy,ret_img,w_500/https://www.rhaegon.com.ar//wp-content/uploads/2021/11/Corsair-CV650-80Bronze.png",
+      "marca": "Fuente",
+      "id": 6
+    },
+    {
+      "nombre": "Monitor Aorus 27″ CV27Q-SA 165Hz 2K FreeSync Premium",
+      "precio": 123000,
+      "imagen": "https://sp-ao.shortpixel.ai/client/q_glossy,ret_img,w_500/https://www.rhaegon.com.ar//wp-content/uploads/2021/12/Aorus-27-CV27Q-SA-165Hz-2K-FreeSync-Premium.png",
+      "marca": "Monitor",
+      "id": 7
+    },
+    {
+      "nombre": "VGA EVGA RTX3070Ti XC3",
+      "precio": 107300,
+      "imagen": "https://sp-ao.shortpixel.ai/client/q_glossy,ret_img,w_500/https://www.rhaegon.com.ar//wp-content/uploads/2022/01/EVGA-RTX3070Ti-XC3.png",
+      "marca": "VGA",
+      "id": 8
+    },
+    {
+      "nombre": "Procesador Ryzen 9 5950X",
+      "precio": 75000,
+      "imagen": "https://www.rhaegon.com.ar//wp-content/uploads/2021/10/RYZEN-9-5950X.png",
+      "marca": "Procesador",
+      "id": 9
+    },
+    {
+      "nombre": "Procesador Ryzen 5 5600X",
+      "precio": 51700,
+      "imagen": "https://www.rhaegon.com.ar//wp-content/uploads/2021/10/RYZEN-5-5600X.png",
+      "marca": "Procesador",
+      "id": 10
+    },
+    {
+      "nombre": "VGA Gigabyte RTX3090 Blower",
+      "precio": 223900,
+      "imagen": "https://sp-ao.shortpixel.ai/client/q_glossy,ret_img,w_500/https://www.rhaegon.com.ar//wp-content/uploads/2022/01/Gigabyte-RTX3090-Blower.png",
+      "marca": "VGA",
+      "id": 11
+    },
+    {
+      "nombre": "Mother Asus TUF Gaming X570 Plus WIFI",
+      "precio": 69000,
+      "imagen": "https://www.rhaegon.com.ar//wp-content/uploads/2021/10/TUF-GAMING-X570-PLUS-WIFI.png",
+      "marca": "Mother",
+      "id": 12
+    },
+    {
+      "nombre": "Mother Gigabyte X570S Aorus Master",
+      "precio": 77000,
+      "imagen": "https://www.rhaegon.com.ar//wp-content/uploads/2021/10/X570S-AORUS-MASTER.png",
+      "marca": "Mother",
+      "id": 13
+    },
+    {
+      "nombre": "VGA Asus RTX3070 K.O. OC",
+      "precio": 99000,
+      "imagen": "https://sp-ao.shortpixel.ai/client/q_glossy,ret_img,w_500/https://www.rhaegon.com.ar//wp-content/uploads/2022/01/Asus-RTX3070-K.O.-OC.png",
+      "marca": "VGA",
+      "id": 14
+    },
+    {
+      "nombre": "Mother Gigabyte X570 Aorus Pro",
+      "precio": 93100,
+      "imagen": "https://www.rhaegon.com.ar//wp-content/uploads/2021/10/X570-AORUS-PRO.png",
+      "marca": "Mother",
+      "id": 15
+    },
+    {
+      "nombre": "VGA Asus RTX3070 White Strix LHR",
+      "precio": 103600,
+      "imagen": "https://sp-ao.shortpixel.ai/client/q_glossy,ret_img,w_500/https://www.rhaegon.com.ar//wp-content/uploads/2022/01/Asus-RTX3070-WHITE-STRIX-LHR.png",
+      "marca": "VGA",
+      "id": 16
+    },
+    {
+      "nombre": "Mother Gigabyte Z590 Aorus Ultra",
+      "precio": 88400,
+      "imagen": "https://www.rhaegon.com.ar//wp-content/uploads/2021/10/Z590-AORUS-ULTRA.png",
+      "marca": "Mother",
+      "id": 17
+    },
+    {
+      "nombre": "Fuente EVGA 850GA SuperNova 80+Gold Modular",
+      "precio": 42450,
+      "imagen": "https://sp-ao.shortpixel.ai/client/q_glossy,ret_img,w_500/https://www.rhaegon.com.ar//wp-content/uploads/2022/01/EVGA-850W-GA-SUPERNOVA-GOLD.png",
+      "marca": "Fuente",
+      "id": 18
+    },
+    {
+      "nombre": "Mother MSI Z590 Gaming Carbon WIFI",
+      "precio": 95000,
+      "imagen": "https://www.rhaegon.com.ar//wp-content/uploads/2021/10/Z590-GAMING-CARBON-WIFI.png",
+      "marca": "Mother",
+      "id": 19
+    },
+    {
+      "nombre": "Procesador Intel i9 10900K",
+      "precio": 91900,
+      "imagen": "https://www.rhaegon.com.ar//wp-content/uploads/2021/10/I9-10900K.png",
+      "marca": "Procesador",
+      "id": 20
+    }
+  ]
